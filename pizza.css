@@ -1,0 +1,10 @@
+body {
+    background-color: antiquewhite;
+}
+
+img{
+    display:block;
+}
+#receipt{
+    display: none;
+}

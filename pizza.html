@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>P4U</title>
+    <link href="pizza.css" type="text/css" rel="stylesheet">
+    <script src="pizza.js" type="text/javascript">
+    </script>
+</head>
+   
+<body>
+    
+    <h1>Pizza4U</h1> 
+    <h3>Choose Your Toppings</h3>
+
+    <table style="width:100%">
+  <tr>
+    <th>Veggies</th>
+    <th>Meat</th> 
+    <th>Cheese</th>
+  </tr>
+  <tr>
+    <td><img src="imgres-1.jpg"><button id="olives" onclick="olivesclick()">add</button></td>   
+   
+    <td> <img src="imgres-3.jpg"><button id="pepperoni" onclick="pepperoniclick()">add</button></td> 
+    
+    <td> <img src="imgres-2.jpg"><button id="feta" onclick="fetaclick()">add</button></td>
+        
+  </tr>
+  <tr>
+    <td><img src="imgres.jpg"><button id="mushrooms" onclick="mushroomsclick()">add</button></td>
+
+    <td><img src="imgres-7.jpg"><button id="ground beef" onclick="groundbeefclick()">add</button></td>
+ 
+    <td><img src="imgres-6.jpg"><button id="mozzarella" onclick="mozzarellaclick()">add</button></td>
+    
+  </tr>
+         <tr>
+    <td><img src="images.jpg"><button id="red onions" onclick="redonionsclick()">add</button></td>
+             
+    <td><img src="imgres-4.jpg"><button id="chicken" onclick="chickenclick()">add</button></td>
+             
+    <td><img src="imgres-5.jpg"><button id="cheddar" onclick="cheddarclick()">add</button></td>
+             
+             
+  </tr>
+</table>
+  <ul>
+      <li><p>pizza base: $8</p></li>
+    <li><p>pepperoni x <span id="pepperonicount">0</span> x$2</p></li>
+       <li><p>olives x <span id="olivescount">0</span> x$1</p></li>
+       <li><p>feta x <span id="fetacount">0</span> x$2</p></li>
+       <li><p>mushrooms x <span id="mushroomscount">0</span> x$1</p></li>
+       <li><p>groundbeef x <span id="groundbeefcount">0</span> x$2</p></li>
+       <li><p>mozzarella x <span id="mozzarellacount">0</span> x$2</p></li>
+       <li><p>redonions x <span id="redonionscount">0</span> x$1</p></li>
+       <li><p>chicken x <span id="chickencount">0</span> x$2</p></li>
+       <li><p>cheddar x <span id="cheddarcount">0</span> x$2</p></li>
+    </ul>
+<button onclick="doFunction();">clear</button> 
+<button onclick="receiptFunction();">order</button> 
+    <div id="receipt">
+        <ul>
+        <h3>Receipt</h3>
+       <li><p>Subtotal: $<span id="Subtotal"></span></p></li>
+            <li><p>Tax: $<span id="Tax"></span></p></li>
+            <li><p>Total: $<span id="Total"></span></p></li>
+        </ul>
+    
+    </div>
+</body>
+    
+
+</html>
